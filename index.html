@@ -304,19 +304,19 @@
         
           
             <p>之前学什么记些东西总是用mac自带的标签或者各种笔记应用，而且自己也不怎么注重整理，今天去找以前的记录找了半天发现，哇！写的都是什么东西连标注都没有，看半天才知道自己需要用到的到底是啥！真是wtf！基于这种情况考虑，自己必须要有一个用于记录东西的地方，并且最好是公开的可供人阅读的（因为要给人看必须强迫自己写的很明白orz…），所以作为一个程序猿👨‍💻‍，当然要来自己动手搞一个个人博客啦！<br>so 作为博客第一篇，就是记录怎么搭一个博客！</p>
-<h2 id="1-创建github域名"><a href="#1-创建github域名" class="headerlink" title="1.创建github域名"></a>1.创建github域名</h2><h3 id="1-1注册一个github账号"><a href="#1-1注册一个github账号" class="headerlink" title="1.1注册一个github账号"></a>1.1注册一个github账号</h3><p>这一步怎么说…要是还用写什么详细教程趁早别弄了吧，附上<a href="https://www.github.com" target="_blank" rel="noopener">github</a>地址！</p>
-<h3 id="1-2创建github仓库"><a href="#1-2创建github仓库" class="headerlink" title="1.2创建github仓库"></a>1.2创建github仓库</h3><p>注册完之后我们需要一个github仓库来保存网站，点击github首页右边栏的<strong>New repository</strong>按钮来创建仓库<br><img src="/image/img1.png" alt=""></p>
+<h2 id="创建github域名"><a href="#创建github域名" class="headerlink" title="创建github域名"></a>创建github域名</h2><h3 id="注册一个github账号"><a href="#注册一个github账号" class="headerlink" title="注册一个github账号"></a>注册一个github账号</h3><p>这一步怎么说…要是还用写什么详细教程趁早别弄了吧，附上<a href="https://www.github.com" target="_blank" rel="noopener">github</a>地址！</p>
+<h3 id="创建github仓库"><a href="#创建github仓库" class="headerlink" title="创建github仓库"></a>创建github仓库</h3><p>注册完之后我们需要一个github仓库来保存网站，点击github首页右边栏的<strong>New repository</strong>按钮来创建仓库<br><img src="/image/img1.png" alt=""></p>
 <p>然后来到创建仓库的页面，此处注意 Respository name 要写成 username.github.io 的形式，这将会是你个人博客的域名，<strong>并且，username 要与前面的 Owner 保持一致！！！</strong>下边这张是因为我仓库名创建过了，只是示例。<br><img src="/image/img2.png" alt=""></p>
-<h2 id="2-安装Hexo"><a href="#2-安装Hexo" class="headerlink" title="2.安装Hexo"></a>2.安装Hexo</h2><p>以下是 mac os 环境安装 Hexo，不过我看了一下 windows 安装，直接百度下边需要安装的东西一个一个安就可以了。</p>
-<h3 id="2-1安装git"><a href="#2-1安装git" class="headerlink" title="2.1安装git"></a>2.1安装git</h3><p>使用 homebrew 安装 git，homebrew 是一种 mac 上的包管理工具，如果没装的话点<a href="https://brew.sh/" target="_blank" rel="noopener">这里</a></p>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><p>以下是 mac os 环境安装 Hexo，不过我看了一下 windows 安装，直接百度下边需要安装的东西一个一个安就可以了。</p>
+<h3 id="安装git"><a href="#安装git" class="headerlink" title="安装git"></a>安装git</h3><p>使用 homebrew 安装 git，homebrew 是一种 mac 上的包管理工具，如果没装的话点<a href="https://brew.sh/" target="_blank" rel="noopener">这里</a></p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ brew install git</span><br></pre></td></tr></table></figure>
-<h3 id="2-2安装nodejs"><a href="#2-2安装nodejs" class="headerlink" title="2.2安装nodejs"></a>2.2安装nodejs</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ brew link node</span><br><span class="line">$ brew uninstall node</span><br><span class="line">$ brew install node</span><br></pre></td></tr></table></figure>
-<h3 id="2-3安装Hexo"><a href="#2-3安装Hexo" class="headerlink" title="2.3安装Hexo"></a>2.3安装Hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
-<h3 id="2-4安装hexo-deployer-git"><a href="#2-4安装hexo-deployer-git" class="headerlink" title="2.4安装hexo-deployer-git"></a>2.4安装hexo-deployer-git</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+<h3 id="安装nodejs"><a href="#安装nodejs" class="headerlink" title="安装nodejs"></a>安装nodejs</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ brew link node</span><br><span class="line">$ brew uninstall node</span><br><span class="line">$ brew install node</span><br></pre></td></tr></table></figure>
+<h3 id="安装Hexo-1"><a href="#安装Hexo-1" class="headerlink" title="安装Hexo"></a>安装Hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<h3 id="安装hexo-deployer-git"><a href="#安装hexo-deployer-git" class="headerlink" title="安装hexo-deployer-git"></a>安装hexo-deployer-git</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <p>到这里所有需要的东西就都安装完成了！下面是配置 Hexo 的部分</p>
-<h2 id="3配置Hexo"><a href="#3配置Hexo" class="headerlink" title="3配置Hexo"></a>3配置Hexo</h2><h3 id="3-1初始化博客"><a href="#3-1初始化博客" class="headerlink" title="3.1初始化博客"></a>3.1初始化博客</h3><p>cd到你想保存整个博客的地方然后执行，webname 换成自己想要的</p>
+<h2 id="配置Hexo"><a href="#配置Hexo" class="headerlink" title="配置Hexo"></a>配置Hexo</h2><h3 id="初始化博客"><a href="#初始化博客" class="headerlink" title="初始化博客"></a>初始化博客</h3><p>cd到你想保存整个博客的地方然后执行，webname 换成自己想要的</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init webname</span><br></pre></td></tr></table></figure>
-<h3 id="3-2更改配置"><a href="#3-2更改配置" class="headerlink" title="3.2更改配置"></a>3.2更改配置</h3><p>切换到刚刚生成的项目目录内，其中_config.yml是网站的配置文件，使用编辑器打开，以下是其中一些需要设置的参数</p>
+<h3 id="更改配置"><a href="#更改配置" class="headerlink" title="更改配置"></a>更改配置</h3><p>切换到刚刚生成的项目目录内，其中_config.yml是网站的配置文件，使用编辑器打开，以下是其中一些需要设置的参数</p>
 <table>
 <thead>
 <tr>
@@ -356,12 +356,12 @@
 <p>repo: <a href="https://github.com/username/username.github.io.git" target="_blank" rel="noopener">https://github.com/username/username.github.io.git</a>  //Github仓库地址</p>
 </blockquote>
 <p>关于详细的配置说明参阅<a href="https://hexo.io/zh-cn/docs/configuration.html" target="_blank" rel="noopener">这里</a><br>博客的各种主题可以看<a href="https://hexo.io/themes/" target="_blank" rel="noopener">这里</a></p>
-<h3 id="3-3测试"><a href="#3-3测试" class="headerlink" title="3.3测试"></a>3.3测试</h3><p>在终端中输入：</p>
+<h3 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h3><p>在终端中输入：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo s</span><br></pre></td></tr></table></figure>
 <p>然后在浏览器中打开 <a href="https://localhost:4000" target="_blank" rel="noopener">https://localhost:4000</a> 就可以访问到你的博客了。</p>
-<h3 id="3-4写文章"><a href="#3-4写文章" class="headerlink" title="3.4写文章"></a>3.4写文章</h3><p>在 webname/source/_posts 下创建 *.md 文件，就可以用 markdown 来写点东西了<br>比如：</p>
+<h3 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a>写文章</h3><p>在 webname/source/_posts 下创建 *.md 文件，就可以用 markdown 来写点东西了<br>比如：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: hello Hexo</span><br><span class="line">---</span><br><span class="line">hello Hexo</span><br></pre></td></tr></table></figure>
-<h3 id="3-5发布"><a href="#3-5发布" class="headerlink" title="3.5发布"></a>3.5发布</h3><p>如果上边的步骤都没有问题的话就要把网页部署到 github 中</p>
+<h3 id="发布"><a href="#发布" class="headerlink" title="发布"></a>发布</h3><p>如果上边的步骤都没有问题的话就要把网页部署到 github 中</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure>
 <p><strong>hexo clean</strong>用来清除缓存文件和已生成的静态文件，建议每一次部署都要执行<br><strong>hexo g</strong>是hexo generate的简写形式，用来生成静态文件<br><strong>hexo d</strong>是hexo deploy的简写形式，用来部署网站</p>
 <h2 id="完成！"><a href="#完成！" class="headerlink" title="完成！"></a>完成！</h2><p>部署成功的话在浏览器输入 <a href="http://whiteseazzz.github.io" target="_blank" rel="noopener">http://whiteseazzz.github.io</a> 就能够访问了。<br>其实呢 Hexo 还有各种可以玩的地方但是我都还没怎么研究！<br>所以，放上来 Hexo 的官方网站：<a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener">Hexo</a></p>
