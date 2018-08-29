@@ -79,20 +79,20 @@
 
 
 
-<meta name="description" content="##屏幕尺寸 1.高度增加145pt，变成812pt.2.状态栏高度由20pt-&amp;gt;44pt，相应的导航栏以上变化64-&amp;gt;88.3.底部工具栏需要为home indicator留出34pt边距.4.物理分辨率为1125px * 2436px. ##自定义导航栏的适配 思路：在Storyboard中按照非iPhoneX设置自定义导航栏的高度为64，然后把高度约束作为属性在源码中修改为vie">
+<meta name="description" content="屏幕尺寸1.高度增加145pt，变成812pt.2.状态栏高度由20pt-&amp;gt;44pt，相应的导航栏以上变化64-&amp;gt;88.3.底部工具栏需要为home indicator留出34pt边距.4.物理分辨率为1125px * 2436px. 自定义导航栏的适配思路：在Storyboard中按照非iPhoneX设置自定义导航栏的高度为64，然后把高度约束作为属性在源码中修改为view.safe">
 <meta property="og:type" content="article">
 <meta property="og:title" content="适配 iPhone X">
 <meta property="og:url" content="http://yoursite.com/2018/01/23/4/index.html">
 <meta property="og:site_name" content="放课后茶会">
-<meta property="og:description" content="##屏幕尺寸 1.高度增加145pt，变成812pt.2.状态栏高度由20pt-&amp;gt;44pt，相应的导航栏以上变化64-&amp;gt;88.3.底部工具栏需要为home indicator留出34pt边距.4.物理分辨率为1125px * 2436px. ##自定义导航栏的适配 思路：在Storyboard中按照非iPhoneX设置自定义导航栏的高度为64，然后把高度约束作为属性在源码中修改为vie">
+<meta property="og:description" content="屏幕尺寸1.高度增加145pt，变成812pt.2.状态栏高度由20pt-&amp;gt;44pt，相应的导航栏以上变化64-&amp;gt;88.3.底部工具栏需要为home indicator留出34pt边距.4.物理分辨率为1125px * 2436px. 自定义导航栏的适配思路：在Storyboard中按照非iPhoneX设置自定义导航栏的高度为64，然后把高度约束作为属性在源码中修改为view.safe">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://yoursite.com/image/img3.png">
 <meta property="og:image" content="http://yoursite.com/image/img4.png">
 <meta property="og:image" content="http://yoursite.com/image/img5.png">
-<meta property="og:updated_time" content="2018-08-29T08:59:59.486Z">
+<meta property="og:updated_time" content="2018-08-29T09:02:06.246Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="适配 iPhone X">
-<meta name="twitter:description" content="##屏幕尺寸 1.高度增加145pt，变成812pt.2.状态栏高度由20pt-&amp;gt;44pt，相应的导航栏以上变化64-&amp;gt;88.3.底部工具栏需要为home indicator留出34pt边距.4.物理分辨率为1125px * 2436px. ##自定义导航栏的适配 思路：在Storyboard中按照非iPhoneX设置自定义导航栏的高度为64，然后把高度约束作为属性在源码中修改为vie">
+<meta name="twitter:description" content="屏幕尺寸1.高度增加145pt，变成812pt.2.状态栏高度由20pt-&amp;gt;44pt，相应的导航栏以上变化64-&amp;gt;88.3.底部工具栏需要为home indicator留出34pt边距.4.物理分辨率为1125px * 2436px. 自定义导航栏的适配思路：在Storyboard中按照非iPhoneX设置自定义导航栏的高度为64，然后把高度约束作为属性在源码中修改为view.safe">
 <meta name="twitter:image" content="http://yoursite.com/image/img3.png">
 
 
@@ -345,14 +345,11 @@
       
 
       
-        <p>##屏幕尺寸</p>
-<p>1.高度增加145pt，变成812pt.<br>2.状态栏高度由20pt-&gt;44pt，相应的导航栏以上变化64-&gt;88.<br>3.底部工具栏需要为home indicator留出34pt边距.<br>4.物理分辨率为1125px * 2436px.</p>
-<p>##自定义导航栏的适配</p>
-<p>思路：在Storyboard中按照非iPhoneX设置自定义导航栏的高度为64，然后把高度约束作为属性在源码中修改为view.safeAreaInsets.top + 44.</p>
+        <h2 id="屏幕尺寸"><a href="#屏幕尺寸" class="headerlink" title="屏幕尺寸"></a>屏幕尺寸</h2><p>1.高度增加145pt，变成812pt.<br>2.状态栏高度由20pt-&gt;44pt，相应的导航栏以上变化64-&gt;88.<br>3.底部工具栏需要为home indicator留出34pt边距.<br>4.物理分辨率为1125px * 2436px.</p>
+<h2 id="自定义导航栏的适配"><a href="#自定义导航栏的适配" class="headerlink" title="自定义导航栏的适配"></a>自定义导航栏的适配</h2><p>思路：在Storyboard中按照非iPhoneX设置自定义导航栏的高度为64，然后把高度约束作为属性在源码中修改为view.safeAreaInsets.top + 44.</p>
 <p>1.把自定义导航栏的高度拖到Controller作为属性.<br><img src="/image/img3.png" alt=""></p>
 <p>2.在viewSafeAreaInsetsDidChange中修改导航栏的高度<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">@available(iOS 11.0, *)</span><br><span class="line">override func <span class="function"><span class="title">viewSafeAreaInsetsDidChange</span></span>() &#123;</span><br><span class="line">    customNaviBarHightConstraint.constant = view.safeAreaInsets.top + 44</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-<p>##TableView、WebView、CollectionView等继承ScrollView的适配</p>
-<p>原来的老项目中包含TableView、CollettionView的页面如果是使用Storyboard设置的约束，在iPhoneX中可能会有34像素的安全区域，scrollview划不到底部，出现这个区域的原因是：原来设置底部约束是tableview底部到Bottom Layout Guide.Top的距离.<br><img src="/image/img4.png" alt=""></p>
+<h2 id="TableView、WebView、CollectionView等继承ScrollView的适配"><a href="#TableView、WebView、CollectionView等继承ScrollView的适配" class="headerlink" title="TableView、WebView、CollectionView等继承ScrollView的适配"></a>TableView、WebView、CollectionView等继承ScrollView的适配</h2><p>原来的老项目中包含TableView、CollettionView的页面如果是使用Storyboard设置的约束，在iPhoneX中可能会有34像素的安全区域，scrollview划不到底部，出现这个区域的原因是：原来设置底部约束是tableview底部到Bottom Layout Guide.Top的距离.<br><img src="/image/img4.png" alt=""></p>
 <p>解决办法：<br>修改约束的Bottom Layout Guide.Top为Superview.Bottom.<br><img src="/image/img5.png" alt=""></p>
 <p>参考<a href="https://www.jianshu.com/p/d8073367c274" target="_blank" rel="noopener">简书</a></p>
 
@@ -448,8 +445,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -510,6 +516,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#屏幕尺寸"><span class="nav-number">1.</span> <span class="nav-text">屏幕尺寸</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义导航栏的适配"><span class="nav-number">2.</span> <span class="nav-text">自定义导航栏的适配</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#TableView、WebView、CollectionView等继承ScrollView的适配"><span class="nav-number">3.</span> <span class="nav-text">TableView、WebView、CollectionView等继承ScrollView的适配</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
